@@ -16,8 +16,9 @@ module GUI::Node
   def update_gui()
     unless @node then
       @status_color ||= {normal:GUI.context.yellow, source:GUI.context.blue, food:GUI.context.red}
+      @radius = 20
       GUI.context.nostroke
-      @node = GUI.context.oval left:(pos[0]-radius), top:(pos[1]-radius), radius:radius
+      @node = GUI.context.oval left:(pos[0]-@radius), top:(pos[1]-@radius), radius:@radius
       @name = GUI.context.para self.class.total, width:100, height:20, left:pos[0], top:pos[1]
     end
 
@@ -86,7 +87,7 @@ module GUI::Interation
   
   def add_node_event(x, y)
     @begin_route = nil
-    node = Node.new(self, x, y)
+    node = Node.new(x, y)
     node.node.click do |b,x,y|
       if b==3 then
         add_route_event(node)
@@ -103,7 +104,7 @@ module GUI::Interation
 
   def add_route_event(node)
     if @begin_route and @begin_route != node then
-      route = Route.new(self, @begin_route, node)
+      route = Route.new(@begin_route, node)
       @routes << route
       route.update_gui
       @begin_route = nil

@@ -30,6 +30,7 @@ class Ant
   end
 
   def leave_food()
+    return if @current_route or @target_node != @nest
     @have_food, @explored_nodes = false, []
     @food_collected += 1
     remember @nest
@@ -43,7 +44,7 @@ class Ant
     @have_food = true
   end
 
-  def next_route
+  def next_route()
     candidate_routes = []
     @target_node.routes.inject(-1000) do |max, r| 
       t = tendency(r)

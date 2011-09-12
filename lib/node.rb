@@ -9,16 +9,11 @@ class Node
     @@number
   end
   
-  attr_accessor :node
-  attr_reader :radius, :current_status, :routes, :pos
+  attr_reader :current_status, :routes, :pos
   
-  def initialize(context, x, y)
+  def initialize(x, y)
     @@number += 1
-    @radius = 20
-    
     @pos = Vector[x,y]
-
-    @name = context.para @@number, width:100, height:20, left:x, top:y
     change_status
   end
   

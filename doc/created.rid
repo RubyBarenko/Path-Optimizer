@@ -1,0 +1,14 @@
+Mon, 12 Sep 2011 09:59:59 -0300
+./lib/ant.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./lib/civilization.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./lib/node.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./lib/path_optimizer_helper.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./lib/route.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./lib/shoes_gui.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./path_optimizer.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./README	Mon, 12 Sep 2011 08:48:42 -0300
+./test/spec/node_spec.rb	Mon, 12 Sep 2011 09:59:06 -0300
+./test/unit/ant_test.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./test/unit/civilization_test.rb	Mon, 12 Sep 2011 08:48:42 -0300
+./test/unit/node_test.rb	Mon, 12 Sep 2011 09:40:26 -0300
+./test/unit/route_test.rb	Mon, 12 Sep 2011 08:48:42 -0300

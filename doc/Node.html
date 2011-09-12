@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="CP850"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=CP850" http-equiv="Content-Type" />
+
+  <title>Class: Node</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./lib/node_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/node.rb">lib/node.rb</a></li>
+          
+            <li><a href="./lib/shoes_gui_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/shoes_gui.rb">lib/shoes_gui.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="Object.html">Object</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-c-total">::total</a></li>
+          
+          <li><a href="#method-i-__change_status">#__change_status</a></li>
+          
+          <li><a href="#method-i-add_route">#add_route</a></li>
+          
+          <li><a href="#method-i-change_status">#change_status</a></li>
+          
+          <li><a href="#method-i-pos-3D">#pos=</a></li>
+          
+          <li><a href="#method-i-to_s">#to_s</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Included Modules -->
+      <div id="includes-section" class="section">
+        <h3 class="section-header">Included Modules</h3>
+        <ul class="link-list">
+        
+        
+          <li><a class="include" href="GUI/Node.html">GUI::Node</a></li>
+        
+        
+        </ul>
+      </div>
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./README.html">README</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./GUI.html">GUI</a></li>
+        
+          <li><a href="./GUI/Civilization.html">GUI::Civilization</a></li>
+        
+          <li><a href="./GUI/Interation.html">GUI::Interation</a></li>
+        
+          <li><a href="./GUI/Menu.html">GUI::Menu</a></li>
+        
+          <li><a href="./GUI/Node.html">GUI::Node</a></li>
+        
+          <li><a href="./GUI/Route.html">GUI::Route</a></li>
+        
+          <li><a href="./Ant.html">Ant</a></li>
+        
+          <li><a href="./Civilization.html">Civilization</a></li>
+        
+          <li><a href="./Node.html">Node</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./Route.html">Route</a></li>
+        
+          <li><a href="./TestNode.html">TestNode</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Node</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="current_status-attribute-method" class="method-detail">
+          <a name="current_status"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">current_status</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="node-attribute-method" class="method-detail">
+          <a name="node"></a>
+          
+          <a name="node="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">node</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="pos-attribute-method" class="method-detail">
+          <a name="pos"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">pos</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="radius-attribute-method" class="method-detail">
+          <a name="radius"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">radius</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="routes-attribute-method" class="method-detail">
+          <a name="routes"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">routes</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(context, x, y)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/node.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">context</span>, <span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>)
+  <span class="ruby-identifier">@@number</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-ivar">@radius</span> = <span class="ruby-value">20</span>
+  
+  <span class="ruby-ivar">@pos</span> = <span class="ruby-constant">Vector</span>[<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>]
+
+  <span class="ruby-ivar">@name</span> = <span class="ruby-identifier">context</span>.<span class="ruby-identifier">para</span> <span class="ruby-identifier">@@number</span>, <span class="ruby-identifier">width</span><span class="ruby-value">100</span><span class="ruby-value">100</span>, <span class="ruby-identifier">height</span><span class="ruby-value">20</span><span class="ruby-value">20</span>, <span class="ruby-identifier">left</span><span class="ruby-value">:x</span>, <span class="ruby-identifier">top</span><span class="ruby-value">:y</span>
+  <span class="ruby-identifier">change_status</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+        <div id="total-method" class="method-detail ">
+          <a name="method-c-total"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">total</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="total-source">
+<pre>
+<span class="ruby-comment"># File lib/node.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">total</span>()
+  <span class="ruby-identifier">@@number</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- total-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- total-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="__change_status-method" class="method-detail method-alias">
+          <a name="method-i-__change_status"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">__change_status</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="Node.html#method-i-change_status">change_status</a>
+          </div>
+          
+        </div><!-- __change_status-method -->
+
+      
+        <div id="add_route-method" class="method-detail ">
+          <a name="method-i-add_route"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">add_route</span><span
+              class="method-args">(route)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="add_route-source">
+<pre>
+<span class="ruby-comment"># File lib/node.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_route</span>(<span class="ruby-identifier">route</span>)
+  (<span class="ruby-ivar">@routes</span><span class="ruby-operator">||=</span>[]) <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">route</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- add_route-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- add_route-method -->
+
+      
+        <div id="change_status-method" class="method-detail ">
+          <a name="method-i-change_status"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">change_status</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="change_status-source">
+<pre>
+<span class="ruby-comment"># File lib/node.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">change_status</span>() 
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">@@number</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-keyword">or</span> <span class="ruby-ivar">@current_status</span> <span class="ruby-operator">==</span> <span class="ruby-value">:source</span> <span class="ruby-keyword">then</span>
+    <span class="ruby-ivar">@current_status</span> = <span class="ruby-value">:source</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">allowed_status</span> = <span class="ruby-identifier">@@status</span> <span class="ruby-operator">-</span> [<span class="ruby-value">:source</span>]
+    <span class="ruby-ivar">@current_status</span> = <span class="ruby-identifier">allowed_status</span>.<span class="ruby-identifier">rotate</span>[<span class="ruby-identifier">allowed_status</span>.<span class="ruby-identifier">index</span>(<span class="ruby-ivar">@current_status</span> <span class="ruby-operator">||</span> <span class="ruby-value">:food</span>)]
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- change_status-source -->
+            
+          </div>
+
+          
+          <div class="aliases">
+            Also aliased as: <a href="Node.html#method-i-__change_status">__change_status</a>
+          </div>
+          
+
+          
+        </div><!-- change_status-method -->
+
+      
+        <div id="pos-3D-method" class="method-detail ">
+          <a name="method-i-pos-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">pos=</span><span
+              class="method-args">(x, y)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="pos-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/node.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">pos=</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>)
+  <span class="ruby-ivar">@pos</span> = <span class="ruby-constant">Vector</span>[<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- pos-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- pos-3D-method -->
+
+      
+        <div id="to_s-method" class="method-detail ">
+          <a name="method-i-to_s"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_s</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="to_s-source">
+<pre>
+<span class="ruby-comment"># File lib/node.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_s</span>()
+ <span class="ruby-node">&quot;Node(#{object_id}){Type:#{@current_status}, Position:#{@pos}, Routes:#{@routes.inject(''){|x0,x| &quot;#{x0}#{x.object_id}, &quot;}}}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_s-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_s-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+
