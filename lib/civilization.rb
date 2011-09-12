@@ -1,4 +1,3 @@
-require 'green_shoes'
 require 'matrix'
 require 'route'
 require 'ant'
@@ -7,6 +6,11 @@ require 'path_optimizer_helper'
 
 module Civilization
   SELECTION_EPOCH_TO_EACH = 30
+  
+  def self.extended(base)
+    base.load_environment
+  end
+  
   def load_environment
     @food_collected, @delivered_time, @epoch = 0, 0, 0
     @nodes  ||= []; @routes ||= []; @colony ||= []
@@ -58,14 +62,6 @@ module Civilization
     end
 
     evaporate
-  end
-
-  def update_gui(all=false)
-    @menu_turn.text = fg(stroke('Turn: ') + fg(@epoch, yellow),white)
-    @menu_population.text = fg(stroke('Pop.: ') + fg(@colony.size, yellow),white)
-    @menu_food_collected.text = fg(stroke('Food: ') + fg(@food_collected, yellow),white)
-
-    @routes.each{|r| r.update_gui} if (@epoch % 10).zero? or all
   end
 
   private
