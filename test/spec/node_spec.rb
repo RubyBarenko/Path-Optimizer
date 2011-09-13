@@ -4,6 +4,7 @@ require 'matrix'
 
 describe Node do
   before(:all) do
+    class Node; @@number = 0; end
     @source ||= Node.new(0, 0)
   end
   
@@ -20,7 +21,7 @@ describe Node do
   
   it "New node must be on [10,15] position" do
     node = Node.new(10,15)
-    node.pos.should == Vector[10,15]
+    node.pos.should eql Vector[10,15]
   end
   
   it "New node must be no route" do

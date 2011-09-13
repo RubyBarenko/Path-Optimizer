@@ -26,13 +26,13 @@ describe Route do
   
   it "Route from node to another node" do
     route = Route.new(from,to)
-    route.nodes[0].should == from
-    route.nodes[1].should == to
+    route.nodes[0].should eql from
+    route.nodes[1].should eql to
   end
   
   it "Route length must be the from - to distance" do
     route = Route.new(from,to)
-    route.length.should == 5
+    route.length.should eql 5
   end
   
   it "Route pheromone must evaporate" do
