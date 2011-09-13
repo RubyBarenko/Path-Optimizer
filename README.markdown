@@ -15,12 +15,17 @@ I think what I did, is quite interesting (although there are still many bugs).
 How to use (mouse-based, sorry Mac users)
 -----------------------------------------
 
-* Creating Nodes: click with the left mouse button on the panel brown. The first Node always is the anthill (blue).
+* **Creating Nodes**: click with the left mouse button on the panel brown. The first Node always is the anthill (blue).
  
-* Create routes: click with right mouse button on both nodes to connect them.
+* **Create routes**: click with right mouse button on both nodes to connect them.
  
-* Activate Food Node: click with the middle mouse button (Node food is red)
+* **Activate Food Node**: click with the middle mouse button (Node food is red)
  
+Sample
+------
+[A Fantastic Green Shoes App: Path-Optimizer](http://vgoff.posterous.com/a-fantastic-green-shoes-app-path-optimizer)
+
+
 
 Start simulation
 ----------------
